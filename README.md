@@ -38,6 +38,7 @@ Your users should be able to:
 
 
 **2) This one is Mobile version design**
+
 ![Web capture_29-8-2023_234752_127 0 0 1](https://github.com/rohitdubey1352/Age-calculator-app/assets/56528673/c506da17-fe51-4836-b9b7-c6847282a9d3)
 
 
