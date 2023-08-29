@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Age Calculator</title>
+</head>
+<body>
+  <h1>Age Calculator</h1>
+  <label for="birthdate">Enter your birthdate:</label>
+  <input type="date" id="birthdate">
+  <button onclick="calculateAge()">Calculate Age</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateAge() {
+      const birthdateInput = document.getElementById("birthdate");
+      const birthdate = new Date(birthdateInput.value);
+      const currentDate = new Date();
+
+      const years = currentDate.getFullYear() - birthdate.getFullYear();
+      const currentMonth = currentDate.getMonth();
+      const birthMonth = birthdate.getMonth();
+      const months = currentMonth - birthMonth + (currentDate.getDate() < birthdate.getDate() ? -1 : 0);
+
+      const days = currentDate.getDate() - birthdate.getDate();
+      
+      const result = `Your age is ${years} years, ${months} months, and ${days} days.`;
+      document.getElementById("result").textContent = result;
+    }
+  </script>
+</body>
+</html> 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Date Example</title>
+</head>
+<body>
+    <p id="myText">Today's date is: REPLACE_THIS</p>
+    <button type="button" onclick="RenderDate()">submit</button>
+    <script>
+
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth() + 1;
+    const day = currentDate.getDate();
+
+    function RenderDate(){
+        const formattedDate = `${year}-${month}-${day}`;
+        document.getElementById("myText").innerHTML = formattedDate;
+
+    }    
+
+    </script>
+</body>
+</html>
